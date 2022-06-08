@@ -39,7 +39,7 @@ public class XMLjdomWriter {
             transformer.setOutputProperty(OutputKeys.INDENT, "yes");
             DOMSource source = new DOMSource(doc);
             StreamResult console = new StreamResult(System.out);
-            StreamResult file = new StreamResult(new File("List.xml"));
+            StreamResult file = new StreamResult(new File("Result.xml"));
             transformer.transform(source, console);
             transformer.transform(source, file);
         } catch (ParserConfigurationException e) {
